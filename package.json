@@ -1,0 +1,31 @@
+{
+  "name": "fake-news-blockchain",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "hardhat:node": "hardhat node",
+    "deploy": "wait-on http://127.0.0.1:8545 && hardhat run scripts/deploy.js --network localhost",
+    "server": "wait-on http://127.0.0.1:8545 && node server/index.js",
+    "frontend": "vite",
+    "dev": "concurrently \"npm run hardhat:node\" \"npm run deploy\" \"npm run server\" \"npm run frontend\"",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ethers": "^5.7.2",
+    "express": "^4.18.2",
+    "hardhat": "^2.17.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "wait-on": "^7.0.1",
+    "concurrently": "^7.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.9"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\HP\\Aistamp\\fake-news-blockchain\\contracts\\TruthRecord.sol": {
+      "lastModificationDate": 1773848463817,
+      "contentHash": "21b7334a1099c5c1e58ab1c78d06fb57",
+      "sourceName": "contracts/TruthRecord.sol",
+      "solcConfig": {
+        "version": "0.8.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.19"
+      ],
+      "artifacts": [
+        "TruthRecord"
+      ]
+    }
+  }
+}
